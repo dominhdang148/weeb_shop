@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WeebShop.Core\WeebShop.Core.csproj" />
+    <ProjectReference Include="..\WeebShop.Data\WeebShop.Data.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Extentions\" />
+    <Folder Include="Media\" />
+    <Folder Include="Products\" />
+  </ItemGroup>
+
+</Project>
