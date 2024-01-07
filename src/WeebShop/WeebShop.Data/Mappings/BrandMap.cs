@@ -14,16 +14,16 @@ namespace WeebShop.Data.Mappings
        public void Configure(EntityTypeBuilder<Brand> builder)
         {
             builder.ToTable("Brands");
-            builder.HasKey(a => a.Id);
-            builder.Property(a => a.Name)
+            builder.HasKey(b => b.Id);
+            builder.Property(b => b.Name)
                 .IsRequired()
                 .HasMaxLength(100);
-            builder.Property(a => a.UrlSlug)
+            builder.Property(b => b.UrlSlug)
                 .IsRequired()
                 .HasMaxLength(100);
-            builder.Property(a => a.LogoUrl)
+            builder.Property(b => b.LogoUrl)
                 .HasMaxLength(500);
-            builder.Property(a => a.Description)
+            builder.Property(b => b.Description)
                 .HasMaxLength(1000);
         }
     }
