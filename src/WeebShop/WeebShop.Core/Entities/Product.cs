@@ -15,7 +15,7 @@ namespace WeebShop.Core.Entities
         public string Description { get; set; }
         public string Meta { get; set; }
         public string UrlSlug { get; set; }
-        public IList<String> ImageURLs { get;set; }
+        public IList<ProductImage> Images { get;set; }
         public int Inventory { get; set; }
         public bool Published { get; set; }
         public DateTime PostedDate { get;set; }
