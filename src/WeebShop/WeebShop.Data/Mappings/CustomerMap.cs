@@ -28,7 +28,7 @@ namespace WeebShop.Data.Mappings
                 .IsRequired()
                 .HasMaxLength(50);
             builder.Property(c=>c.DateOfBirth)
-                .HasColumnType("date");
+                .HasColumnType("datetime");
             builder.Property(c => c.Address)
                 .HasMaxLength(100)
                 .IsRequired();
