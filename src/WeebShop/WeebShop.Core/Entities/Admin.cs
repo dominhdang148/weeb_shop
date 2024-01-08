@@ -19,7 +19,6 @@ namespace WeebShop.Core.Entities
         public DateTime JoinedDate { get; set; }
         public string ContactNumber { get; set; }
         public string Address { get;set; }
-        public ActivateStatus AccountStatus { get; set; }   
-        
+        public ActivateStatus AccountStatus { get; set; }        
     }
 }

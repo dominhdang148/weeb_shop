@@ -17,10 +17,10 @@ namespace WeebShop.Data.Mappings
             builder.HasKey(c => c.Id);
             builder.Property(c => c.FirstName)
                 .IsRequired()
-                .HasMaxLength(100);
+                .HasMaxLength(50);
             builder.Property(c=>c.LastName)
                 .IsRequired()
-                .HasMaxLength(100);
+                .HasMaxLength(50);
             builder.Property(c => c.Email)
                 .IsRequired()
                 .HasMaxLength(50);
