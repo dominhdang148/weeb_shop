@@ -13,7 +13,8 @@ namespace WeebShop.Core.Entities
         public int Id { get; set; }
         public string Name { get; set; }
         public string UrlSlug { get; set; }
-        public string LogoUrl { get; set; }
+        public int LogoId { get; set; }
+        public Image Logo { get; set; }
         public string Description { get; set; }
         public IList<Product> Products { get; set; } 
     }

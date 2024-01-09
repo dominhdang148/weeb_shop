@@ -21,8 +21,10 @@ namespace WeebShop.Data.Mappings
             builder.Property(b => b.UrlSlug)
                 .IsRequired()
                 .HasMaxLength(100);
-            builder.Property(b => b.LogoUrl)
-                .HasMaxLength(500);
+            builder.HasOne(b => b.Logo)
+                .WithOne(i => i.Brand)
+                .HasForeignKey<Brand>(b => b.LogoId)
+                .OnDelete(DeleteBehavior.SetNull);
             builder.Property(b => b.Description)
                 .HasMaxLength(1000);
         }

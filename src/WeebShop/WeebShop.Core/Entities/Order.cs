@@ -15,5 +15,6 @@ namespace WeebShop.Core.Entities
         public OrderStatus OrderStatus { get; set; }
         public int CustomerId { get; set;}  
         public Customer Customer { get; set; } 
+        public IList<OrderItem> OrderItems { get; set; }
     }
 }
