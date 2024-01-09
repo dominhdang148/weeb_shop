@@ -35,7 +35,7 @@ namespace WeebShop.Data.Mappings
             builder.Property(a=>a.ContactNumber)
                 .IsRequired()
                 .HasMaxLength(11);
-            builder.Property("Address")
+            builder.Property(a=>a.Address)
                 .IsRequired()
                 .HasMaxLength(100);
             builder.Property(a => a.AccountStatus)
