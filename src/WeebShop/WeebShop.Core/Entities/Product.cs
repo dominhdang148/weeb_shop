@@ -15,12 +15,11 @@ namespace WeebShop.Core.Entities
         public string Description { get; set; }
         public string Meta { get; set; }
         public string UrlSlug { get; set; }
-        public IList<ProductImage> Images { get;set; }
+        public IList<Image> Images { get;set; }
         public int Inventory { get; set; }
         public bool Published { get; set; }
         public DateTime PostedDate { get;set; }
         public double Price { get; set; }
-
         public int CategoryId { get; set; }
         public int BrandId { get; set; }    
         public Category Category { get; set; }
