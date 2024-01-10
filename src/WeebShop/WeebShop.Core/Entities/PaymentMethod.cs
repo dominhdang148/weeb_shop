@@ -10,9 +10,7 @@ namespace WeebShop.Core.Entities
     public class PaymentMethod : IEntity
     {
         #region Primary Key
-
         public int Id { get; set; }
-
         #endregion
 
         #region Properties
