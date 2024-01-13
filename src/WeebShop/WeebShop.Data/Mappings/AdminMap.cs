@@ -44,6 +44,6 @@ namespace WeebShop.Data.Mappings
             builder.Property(a => a.LastLogin)
                 .IsRequired()
                 .HasColumnType("datetime");
-        }
+        
     }
 }
