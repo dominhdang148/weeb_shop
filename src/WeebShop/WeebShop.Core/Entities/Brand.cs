@@ -7,20 +7,19 @@ using WeebShop.Core.Contracts;
 
 namespace WeebShop.Core.Entities
 {
-    public class Category : IEntity
+    public class Brand : IEntity
     {
         #region Primary Key
         public int Id { get; set; }
         #endregion
 
         #region Properties
-        public string Name { get; set; }
+        public string Name { get; set; }    
         public string Description { get; set; }
         public string UrlSlug { get; set; }
-        public bool ShowOnMenu { get; set; }
-        public DateTime CreateAt { get; set; }
+        public string Website { get; set; }
+
         #endregion
 
-        
     }
 }

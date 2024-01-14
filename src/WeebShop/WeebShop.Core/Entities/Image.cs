@@ -7,20 +7,17 @@ using WeebShop.Core.Contracts;
 
 namespace WeebShop.Core.Entities
 {
-    public class Category : IEntity
+    public class Image : IEntity
     {
-        #region Primary Key
+        #region Primary Ksey
         public int Id { get; set; }
         #endregion
-
+         
         #region Properties
-        public string Name { get; set; }
-        public string Description { get; set; }
-        public string UrlSlug { get; set; }
-        public bool ShowOnMenu { get; set; }
-        public DateTime CreateAt { get; set; }
+        public string Alternative { get; set; }
+        public string Url { get; set; } 
         #endregion
 
-        
+       
     }
 }
