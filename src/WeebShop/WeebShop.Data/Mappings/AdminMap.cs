@@ -20,10 +20,10 @@ namespace WeebShop.Data.Mappings
             builder.HasKey(a => a.Id);
 
             // Define Properties
-            builder.Property(a=>a.FirstName)
+            builder.Property(a => a.FirstName)
                 .IsRequired()
                 .HasMaxLength(50);
-            builder.Property(a=>a.LastName)
+            builder.Property(a => a.LastName)
                 .IsRequired()
                 .HasMaxLength(50);
             builder.Property(a => a.Email)
@@ -44,6 +44,6 @@ namespace WeebShop.Data.Mappings
             builder.Property(a => a.LastLogin)
                 .IsRequired()
                 .HasColumnType("datetime");
-        
+        }
     }
 }

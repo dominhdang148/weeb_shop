@@ -15,9 +15,11 @@ namespace WeebShop.Core.Entities
          
         #region Properties
         public string Alternative { get; set; }
-        public string Url { get; set; } 
+        public string Url { get; set; }
         #endregion
 
-       
+        #region Relationships
+
+        #endregion
     }
 }
