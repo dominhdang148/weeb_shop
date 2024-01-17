@@ -12,29 +12,35 @@ namespace WeebShop.Data.Mappings
     public class CustomerMap:IEntityTypeConfiguration<Customer>
     {
         public void Configure(EntityTypeBuilder<Customer> builder)
-        {
+        {   
+            // Create Table Customers
             builder.ToTable("Customers");
+
+            // Define Primary Key
             builder.HasKey(c => c.Id);
-            builder.Property(c => c.FirstName)
+
+            // Define Properties
+            builder.Property(c=>c.Email)
+                .IsRequired()
+                .HasMaxLength(50);
+            builder.Property(c=>c.Password)
+                .IsRequired()
+                .HasMaxLength(100);
+            builder.Property(c=>c.FirstName)
                 .IsRequired()
                 .HasMaxLength(50);
             builder.Property(c=>c.LastName)
                 .IsRequired()
                 .HasMaxLength(50);
-            builder.Property(c => c.Email)
+            builder.Property(c => c.ModifiedAt)
                 .IsRequired()
-                .HasMaxLength(50);
-            builder.Property(c => c.Password)
-                .IsRequired()
-                .HasMaxLength(50);
-            builder.Property(c=>c.DateOfBirth)
                 .HasColumnType("datetime");
-            builder.Property(c => c.Address)
-                .HasMaxLength(100)
-                .IsRequired();
-            builder.Property(c => c.PhoneNumber)
-                .HasMaxLength(11)
-                .IsRequired();
+            builder.Property(c => c.CreatedAt)
+                .IsRequired()
+                .HasColumnType("datetime");
+            builder.Property(c => c.DateOfBirth)
+                .HasColumnType("datetime");
+       
         }
     }
 }

@@ -7,15 +7,13 @@ using WeebShop.Core.Contracts;
 
 namespace WeebShop.Core.Entities
 {
-    public class OrderItem:IEntity
+    public class Inventory : IEntity
     {
         public int Id { get; set; }
         public int Quantity { get; set; }
-        public int OrderId { get; set; }    
-        public int ProductId { get; set; }
-        public double ItemPrice { get; set; }
-        public Order Order { get; set; }
-        public Product Product { get; set; }
+        public string UrlSlug { get; set; } // Might be removed
+        public DateTime CreatedAt { get; set; }
+        public DateTime UpdatedAt { get; set;}
+       
     }
 }
- 

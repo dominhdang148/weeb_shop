@@ -15,9 +15,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Services\WeebShop.Services.csproj" />
     <ProjectReference Include="..\WeebShop.Core\WeebShop.Core.csproj" />
     <ProjectReference Include="..\WeebShop.Data\WeebShop.Data.csproj" />
+    <ProjectReference Include="..\WeebShop.Services\WeebShop.Services.csproj" />
   </ItemGroup>
 
 </Project>

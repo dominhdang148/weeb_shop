@@ -7,19 +7,25 @@ using WeebShop.Core.Contracts;
 
 namespace WeebShop.Core.Entities
 {
-    public class Brand : IEntity
+    public class PaymentMethod : IEntity
     {
         #region Primary Key
         public int Id { get; set; }
         #endregion
 
         #region Properties
-        public string Name { get; set; }    
-        public string Description { get; set; }
-        public string UrlSlug { get; set; }
-        public string Website { get; set; }
+
+        public string Provider { get; set; }
+        public string AccountNo { get; set; }
+        public DateTime Expiry { get; set; }
 
         #endregion
+
+        #region Foreign Key
+        public int CustomerId { get; set; }
+        public Customer Customer { get; set; }
+        #endregion
+
 
     }
 }

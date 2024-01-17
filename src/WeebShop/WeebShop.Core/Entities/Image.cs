@@ -7,14 +7,19 @@ using WeebShop.Core.Contracts;
 
 namespace WeebShop.Core.Entities
 {
-    public class Image:IEntity
+    public class Image : IEntity
     {
+        #region Primary Ksey
         public int Id { get; set; }
-        public string Name { get; set; }
-        public string ImageUrl { get; set; }
-        public int ProductID { get; set; }  
-        public Product Product { get; set; }
-        public int BrandID { get;set; }
-        public Brand Brand { get; set; }
+        #endregion
+         
+        #region Properties
+        public string Alternative { get; set; }
+        public string Url { get; set; }
+        #endregion
+
+        #region Relationships
+
+        #endregion
     }
 }

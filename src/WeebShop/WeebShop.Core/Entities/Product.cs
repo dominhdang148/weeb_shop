@@ -7,25 +7,26 @@ using WeebShop.Core.Contracts;
 
 namespace WeebShop.Core.Entities
 {
-    public class Product:IEntity
+    public class Product : IEntity
     {
+        #region Primary Key
         public int Id { get; set; }
-        public string Name { get; set; }
-        public string ShortDescription { get; set; }
-        public string Description { get; set; }
-        public string Meta { get; set; }
-        public string UrlSlug { get; set; }
-        public IList<Image> Images { get;set; }
-        public int Inventory { get; set; }
-        public bool Published { get; set; }
-        public DateTime PostedDate { get;set; }
-        public double Price { get; set; }
-        public int CategoryId { get; set; }
-        public int BrandId { get; set; }    
-        public Category Category { get; set; }
-        public Brand Brand { get; set; }
-        public List<Tag> Tags { get; set; }
+        #endregion
 
+        #region Properties
+        public string Name { get; set; }
+        public string UrlSlug { get; set; }
+        public string Description { get; set; }
+        public string SKU { get; set; }
+        public string Metadata { get; set; }
+        public decimal Price { get; set; }
+        public DateTime CreatedAt { get; set; }
+        public DateTime ModifiedAt { get; set; }
+        public bool IsPublished { get; set; }
+        #endregion
+
+        #region Foreign Key
+
+        #endregion
     }
 }
-    
